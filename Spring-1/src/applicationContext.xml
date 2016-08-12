@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  <!-- 配置bean  
+        class:bean 的全类名，通过反射的方式在IOC的容器中创建Bean，所以要求Bean中必须有无参数的构造器
+        id：标识容器中的bean.id 唯一.-->
+    <!-- spring  全类名反射创建bean实例，要求helloworld必须要有一个无参的构造器，创建一个对象，id标识这个对象  -->
+  <bean id="helloWorld2" class="com.spring.beans.HelloWorld">
+  <!-- property name 对应set后面的东东  ，把值赋给spring-->
+     <property name="name" value="spring1"></property>
+     
+  </bean>
+</beans>
